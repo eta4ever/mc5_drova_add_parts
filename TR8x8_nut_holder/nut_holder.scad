@@ -45,6 +45,9 @@ difference(){
                 }
             
             }
-       
+            
+            translate([-0.01, -0.01, -0.01])
+                cube([72.52,1.01,10.02]); //1mm error compensating
+    
     }
 }
