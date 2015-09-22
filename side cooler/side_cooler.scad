@@ -13,12 +13,12 @@ difference(){
         difference(){
         
             rotate([90,0,0])
-                linear_extrude(height = 34, center = true, convexity = 10, twist = 0)
-                    polygon([[-21, 5], [16, 25], [16, 45], [21, 45], [21, 5]], [[0,2,3,4], [0,1,2]]);
+                linear_extrude(height = 35, center = true, convexity = 10, twist = 0)
+                    polygon([[-19, 5], [16, 25], [16, 45], [21, 45], [21, 5]], [[0,2,3,4], [0,1,2]]);
             
             rotate([90,0,0])
                 linear_extrude(height = 32, center = true, convexity = 10, twist = 0)
-                    polygon([[-18, 4.99], [17, 24], [17, 45.01], [20, 45.01], [20, 4.99]], [[0,2,3,4], [0,1,2]]);
+                    polygon([[-17, 4.99], [17, 24], [17, 45.01], [20, 45.01], [20, 4.99]], [[0,2,3,4], [0,1,2]]);
         }
         
 
@@ -64,49 +64,26 @@ difference(){
     
 }
 
-// ухи вверхухи
+// ухо вверхухо
 difference()
 {
     union()
     {
-        hull()
-        {
-            translate([-21.5, 15, 0]) cube([1, 8, 10], center=true);
-            translate([-42, 15, 0]) cylinder(h=10, r=4, center=true);
-        }
+            translate([-26, 15, -1.5]) cube([10, 10, 7], center=true);
     }
     
-    union()
-    {
-        hull()
+        union()
         {
-            translate([-24, 15, 0]) cylinder(h=10.01, r=1.8, center=true);
-            translate([-42, 15, 0]) cylinder(h=10.01, r=1.8, center=true);
+            translate([-27, 15, -1.4]) rotate([90, 0, 0]) cylinder(h=10.01, r=1.8, center=true);
+    
+            hull()
+            {
+                translate([-22.7, 15, 0]) cylinder(h=10.01, r=1.8, center=true);
+                translate([-42, 15, 0]) cylinder(h=10.01, r=1.8, center=true);
+            }
         }
-        
-    }
 }
 
-difference()
-{
-    union()
-    {
-        hull()
-        {
-            translate([-21.5, -15, 0]) cube([1, 8, 10], center=true);
-            translate([-42, -15, 0]) cylinder(h=10, r=4, center=true);
-        }
-    }
-    
-    union()
-    {
-        hull()
-        {
-            translate([-24, -15, 0]) cylinder(h=10.01, r=1.8, center=true);
-            translate([-42, -15, 0]) cylinder(h=10.01, r=1.8, center=true);
-        }
-        
-    }
-}
+
 
 

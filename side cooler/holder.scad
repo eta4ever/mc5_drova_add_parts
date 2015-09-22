@@ -23,9 +23,13 @@ difference()
 {
     union()
     {
-        translate([25, 0, 10]) rotate([0,90,90]) cylinder(h=2.5, r=3, center=true);
-        translate([25, 0, 5]) cube([6, 2.5, 10], center=true);
+        translate([25, 0, 10]) rotate([0,90,90]) cylinder(h=3.1, r=3, center=true);
+        translate([25, 0, 5]) cube([6, 3.1, 10], center=true);
     }
     
-    translate([25, 0, 10]) rotate([0,90,90]) cylinder(h=2.51, r=1.8, center=true);
+    translate([25, 0, 10]) rotate([0,90,90]) cylinder(h=3.11, r=1.8, center=true);
 }
+
+rotate([90,0,0])
+                linear_extrude(height = 3.1, center = true, convexity = 10, twist = 0)
+                    polygon([[18, 1], [22, 1], [22, 10]]);
