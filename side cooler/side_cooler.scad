@@ -69,7 +69,7 @@ difference()
 {
     union()
     {
-            translate([-26, 15, -1.5]) cube([10, 10, 7], center=true);
+            translate([-31, 15, -1.5]) cube([20, 10, 7], center=true);
     }
     
         union()
@@ -84,6 +84,10 @@ difference()
         }
 }
 
+translate([-22,-20,-1.5]) cylinder(h=7, r=3, center=true);
+translate([22,-20,-1.5]) cylinder(h=7, r=3, center=true);
+translate([22,20,-1.5]) cylinder(h=7, r=3, center=true);
 
-
+translate([-39,19,-1.5]) cylinder(h=7, r=3, center=true);
+translate([-39,11, -1.5]) cylinder(h=7, r=3, center=true);
 
