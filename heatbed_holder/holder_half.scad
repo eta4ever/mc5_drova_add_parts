@@ -34,8 +34,8 @@ difference(){
         }
         
        
-        translate([-18.5, -23.5, 4.5]) cylinder(h=6, r=4, center=true); //упор под винт ремня
-        translate([-18.5, 23.5, 4.5]) cylinder(h=6, r=4, center=true); //упор под винт ремня
+        translate([-18.5, -23.5, 3.5]) cylinder(h=4, r=4, center=true); //упор под винт ремня
+        translate([-18.5, 23.5, 3.5]) cylinder(h=4, r=4, center=true); //упор под винт ремня
         
         hull(){
             translate([-9,40,0]) cylinder(h=3, r=9, center=true);
