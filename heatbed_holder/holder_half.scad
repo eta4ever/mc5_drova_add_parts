@@ -38,8 +38,8 @@ difference(){
         translate([-18.5, 23.5, 3.5]) cylinder(h=4, r=4, center=true); //упор под винт ремня
         
         hull(){
-            translate([-9,40,0]) cylinder(h=3, r=9, center=true);
-            translate([-9,-40,0]) cylinder(h=3, r=9, center=true);
+            translate([-9,42,0]) cylinder(h=3, r=9, center=true);
+            translate([-9,-42,0]) cylinder(h=3, r=9, center=true);
             }
       
     }
@@ -47,17 +47,17 @@ difference(){
     union(){
         translate([-18.5, -23.5, 4]) cylinder(h=11.01, r=1.7, center=true); //под винт ремня
         
-        translate([-10, -27.4, 4]) cylinder(h=11.01, r=1.7, center=true); // под прижим lm6uu
-        translate([10, -27.5, 4]) cylinder(h=11.01, r=1.7, center=true);
-        translate([-10, -42.5, 4]) cylinder(h=11.01, r=1.7, center=true);
-        translate([10, -42.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([-10, -25.5, 4]) cylinder(h=11.01, r=1.7, center=true); // под прижим lm6uu
+        translate([10, -25.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([-10, -44.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([10, -44.5, 4]) cylinder(h=11.01, r=1.7, center=true);
         
         translate([-18.5, 23.5, 4]) cylinder(h=11.01, r=1.7, center=true); //под винт ремня
         
-        translate([-10, 27.5, 4]) cylinder(h=11.01, r=1.7, center=true); // под прижим lm6uu
-        translate([10, 27.5, 4]) cylinder(h=11.01, r=1.7, center=true);
-        translate([-10, 42.5, 4]) cylinder(h=11.01, r=1.7, center=true);
-        translate([10, 42.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([-10, 25.5, 4]) cylinder(h=11.01, r=1.7, center=true); // под прижим lm6uu
+        translate([10, 25.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([-10, 44.5, 4]) cylinder(h=11.01, r=1.7, center=true);
+        translate([10, 44.5, 4]) cylinder(h=11.01, r=1.7, center=true);
         
         translate([-75,50,0]) cylinder(h=3.01, r=1.7, center=true); //под столик
         translate([-75,-50,0]) cylinder(h=3.01, r=1.7, center=true);
